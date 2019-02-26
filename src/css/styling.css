@@ -1,0 +1,251 @@
+html, body
+{
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+}
+
+.introduction {
+  font-size: 18px;
+  padding: 40px 60px 60px 40px;
+}
+
+@media (max-width: 991px) {
+  .introduction {
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+
+.welcome {
+  padding: 40px 40px 40px 40px;
+  height: 100%;
+  background: url("../images/background.jpg") no-repeat center fixed;
+  background-size: cover;
+  color: #fffeff;
+  position: relative;
+}
+
+.box {
+  padding: 80px 20px 20px 20px;
+  height: 100%;
+  background-color: rgba(34, 166, 179, 0.5);
+}
+
+@media (max-width: 991px) {
+  .box {
+    padding-top: 20px;
+  }
+  .welcome {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+a:link {
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+a:hover {
+  color: #2c3e50;
+}
+a:active {
+  color: #2c3e50;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.map-column {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+#map {
+  min-height: calc(100vh - 200px);
+}
+
+#slider {
+  padding: 20px;
+}
+
+.selected {
+  fill: red;
+}
+
+.hidden {
+  display: none;
+}
+
+div.tooltip {
+  color: #222;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 0px #a6a6a6;
+  padding: .2em;
+  text-shadow: #f5f5f5 0 1px 0;
+  opacity: 0.9;
+  position: absolute;
+}
+
+.vertical {
+  position:relative;
+  float: top;
+  width: 100%;
+  padding: 1px;
+}
+
+.analysis-column {
+  padding: 10px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #22a6b3;
+  color: #fff;
+}
+
+.carousel {
+  height: 100%;
+}
+
+.carousel-inner {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+@media (max-width: 991px) {
+    .carousel-inner {
+        height: auto;
+        min-height: 30vh;
+    }
+}
+.carousel-item {
+  padding: 40px 50px 30px 50px;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.plot {
+  width: 100%;
+  min-height: 100vh;
+  /* max-height: 500px; */
+  height: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    /* Overwrite Bootstrap's standard 15% with the
+       padding of .carousel-item */
+    width: 50px;
+    align-items: flex-start;
+    top: 20px;
+}
+
+.carousel-indicators {
+  top: 10px;
+  bottom: 100%;
+}
+
+.axis-line path,
+.axis-line line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+.scatter-dot {
+  stroke: #e67e22;
+}
+
+.axis-label {
+  font-size: 15px;
+  color: #fff;
+}
+
+.axis-line text {
+  fill: #fff;
+  font-size: 1.4em;
+}
+
+.footer {
+  padding: 5px;
+  color: #000;
+  font-size: 12px;
+}
+
+.footer a:link {
+  color: #22a6b3;
+}
+.footer a:visited {
+  color: #22a6b3;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 85%;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
